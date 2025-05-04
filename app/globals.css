@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
@@ -56,6 +57,7 @@
 }
 
 @layer base {
+  
   * {
     @apply border-border;
   }
@@ -74,6 +76,16 @@
     @apply  font-bold tracking-tight;
   }
 
+  p,
+  li,
+  span,
+  label,
+  input,
+  textarea,
+  button {
+    font-family: var(--font-body);
+  }
+
   /* p,
   li,
   span,
@@ -83,6 +95,8 @@
   button {
     @apply font-body;
   } */
+
+
 
   .font-medium {
     @apply tracking-tight;

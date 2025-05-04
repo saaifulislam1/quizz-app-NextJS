@@ -1,19 +1,19 @@
 import type React from "react";
 import type { Metadata } from "next";
-import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
-// Define fonts
-const outfit = Outfit({
+import { Inter, Outfit } from "next/font/google";
+
+export const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-outfit",
+  variable: "--font-inter",
   display: "swap",
 });
 
-const inter = Inter({
+export const outfit = Outfit({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-outfit",
   display: "swap",
 });
 
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  generator: "v0.dev",
+  generator: "Saiful",
 };
 
 export default function RootLayout({
@@ -36,10 +36,10 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${outfit.variable} ${inter.variable}`}
+      className={`font-body ${inter.variable} ${outfit.variable}`}
     >
       <body
-        className={`font-body ${outfit.variable} ${inter.variable}`}
+        className={`${outfit.variable} ${inter.variable}`}
         suppressHydrationWarning
       >
         <ThemeProvider

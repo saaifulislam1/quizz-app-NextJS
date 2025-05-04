@@ -19,10 +19,10 @@ const config = {
       },
     },
     extend: {
-      // fontFamily: {
-      //   heading: ["var(--font-outfit)", "system-ui", "sans-serif"],
-      //   body: ["var(--font-inter)", "system-ui", "sans-serif"],
-      // },
+      fontFamily: {
+        heading: ["var(--font-outfit)", "system-ui", "sans-serif"],
+        body: ["var(--font-inter)", "system-ui", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
